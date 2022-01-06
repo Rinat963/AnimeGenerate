@@ -16,6 +16,10 @@ let citata = [
     "Если сдаваться, не попробовав - результат не изменится. - Ванпанчмен "
 ];
 
+let bg = ["#000000", "#01314d", "#1a618a", "#4a0d44", "#1d3308", "#420505", "#750046", "#6e5363", "#1c6e8a", "#0c660a", "#b30000", "#2c51d4"
+
+];
+
 function radomaiser(arg1) {
     let random = Math.floor(Math.random() * arg1.length);
     return arg1[random];
@@ -23,7 +27,13 @@ function radomaiser(arg1) {
 let phrase = document.querySelector(".phrase");
 const main = document.querySelector(".main");
 let btn = main.querySelector(".btn");
+let bgcolor = document.querySelector(".bgcolor");
+let body = document.querySelector(".body");
+
 
 btn.addEventListener("click", function() {
     phrase.textContent = radomaiser(citata);
+});
+bgcolor.addEventListener("click", function() {
+    body.style.background = radomaiser(bg);
 });
