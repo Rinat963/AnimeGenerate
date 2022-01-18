@@ -38,8 +38,8 @@ let pint = document.querySelector(".pint");
 
 btn.addEventListener("click", function() {
     let randometextimage = radomaiser(citata);
-    phrase.textContent = randometextimage.text;
-    pint.src = randometextimage.image;
+    smoothly(phrase, "textContent", randometextimage.text);
+    smoothly(pint, "src", randometextimage.image);
 });
 
 bgcolor.addEventListener("click", function() {
