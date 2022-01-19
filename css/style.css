@@ -98,7 +98,6 @@
     }
     
     .page {
-        width: 1200px;
         margin: 0 auto;
     }
     
@@ -123,6 +122,7 @@
         font-size: 25px;
         color: white;
         margin-top: 20px;
+        margin-left: 10px;
     }
     
     .bgcolor {
@@ -134,6 +134,7 @@
         transition-duration: 0.4s;
         width: 0 auto;
         border-radius: 5px;
+        margin-right: 10px;
     }
     
     .bgcolor:hover {
@@ -216,7 +217,7 @@
     }
     .sliderall {
         margin: 0 auto;
-        width: 1200px;
+        /*width: 1200px;*/
         display: flex;
         flex-wrap: wrap
     }
@@ -304,10 +305,46 @@
         font-family: 'Suisse';
         font-weight: bold;
     }
-    
-    @media screen and (max-width: 600px) {
+
+    @media screen and (max-width: 699px) {
         .body {
-            background-color: #e00000;
             font-family: 'Suisse';
         };
-        }
+        .page {
+            margin: 0 auto;
+        };
+        .nav {
+            margin-top: 35px;
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+        };
+
+        .autor {
+            margin-left: 30px;
+        };
+
+        .bgcolor {
+            margin-right: 30px;
+        };
+
+        .maintext {
+            color: rgb(255, 255, 255);
+            font-size: 40px;
+            text-align: center;
+        };
+        .img {
+            display: flex;
+            flex-direction: column;
+            margin: 50px auto 0;
+            width: 500px;
+            box-shadow: 0 0px 50px rgb(255, 255, 255);
+            border-radius: 20px;
+            background-color: #a8a8a8;
+        };
+        .top {
+            color: white;
+            text-align: center;
+            margin: 20px 10px 40px;
+        };
+    }
